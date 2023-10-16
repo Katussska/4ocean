@@ -1,4 +1,4 @@
-# School Project - Website Replication
+# School Project - Website Replication (!in progress!)
 
 This project aims to replicate the website [www.4ocean.com](https://www.4ocean.com/) as closely as possible for
 educational purposes.
