@@ -1,19 +1,20 @@
 body {
     margin: 0;
+    font-family: Montserrat, sans-serif;
 }
 
 nav {
     width: 100%;
     height: max-content;
-    padding-top: 20px;
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
 }
 
 .top {
-    width: 80%;
+    width: 70%;
     height: min-content;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     align-self: center;
     display: flex;
     justify-content: space-between;
@@ -28,9 +29,10 @@ nav {
 .logo img {
     height: 27px;
     width: auto;
+    padding-left: 25px;
 }
 
-.right {
+.rightNav {
     display: flex;
 }
 
@@ -44,23 +46,25 @@ nav {
     display: flex;
     justify-content: center;
     font-weight: 700;
-    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.04rem;
     color: dimgray;
 }
 
 .navBar div {
-    margin: 8px 15px 15px 15px;
+    margin: 8px 15px 17px 15px;
 
 }
 
 .navBar span:hover {
     color: black;
-    border-bottom: 4px solid #0066b2;
+    border-bottom: 4px solid #0055b8;
     cursor: pointer;
 }
 
 .hero {
-    background-image: url("hero/01.jpg");
+    background-image: url("hero/03.jpg");
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -69,6 +73,95 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: white;
+}
+
+.heroText h1 {
+    font-size: 80px;
+    font-weight: 800;
+    margin: -10px;
+}
+
+.heroText .subText {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 40px 0;
+}
+
+button {
+    background: white;
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.04rem;
+    color: #0055b8;
+    padding: 13px 50px;
+    border-radius: 35px;
+    border: white;
+    cursor: pointer;
+}
+
+
+.braceletText {
+    color: #0055b8;
+    font-weight: 800;
+    font-size: 35px;
+    text-align: center;
+}
+
+.bracelet {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    max-width: 70%;
+}
+
+.leftBracelet {
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+    justify-content: center;
+    width: 25%;
+}
+
+.middleBracelet {
+    margin: 20px;
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    justify-content: center;
+}
+
+.rightBracelet {
+    width: 25%;
+    height: auto;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+    justify-content: center;
+}
+
+.object {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.image {
+    margin: 20px 15px;
+}
+
+.smallTxt {
+    font-size: 10px;
+}
+
+.image6 img {
+    width: 125px;
+    margin: 15px 0 0 15px;
 }
 
 .stars svg {
