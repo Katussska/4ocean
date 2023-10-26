@@ -113,7 +113,8 @@ button {
     display: flex;
     align-content: center;
     justify-content: center;
-    max-width: 70%;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .leftBracelet {
