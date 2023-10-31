@@ -98,7 +98,7 @@ button {
     cursor: pointer;
 }
 
-.heroButt {
+.heroButt, .giftButt {
     background: white;
     color: #0055b8;
     border: white;
@@ -156,7 +156,7 @@ button {
     justify-content: center;
 }
 
-.object {
+.braceletObject {
     width: auto;
     height: auto;
     display: flex;
@@ -171,7 +171,7 @@ button {
     margin-top: -10px;
 }
 
-.image img {
+.braceletImage img {
     width: 80px;
     height: auto;
     margin: 20px 15px;
