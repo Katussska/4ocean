@@ -1,14 +1,18 @@
 body {
     margin: 0;
-    font-family: Montserrat, sans-serif;
+    letter-spacing: .04rem;
+    font-family: Montserrat, sans-serif
+}
+
+.top, nav {
+    display: flex
 }
 
 nav {
     width: 100%;
     height: max-content;
     padding-top: 30px;
-    display: flex;
-    flex-direction: column;
+    flex-direction: column
 }
 
 .top {
@@ -16,144 +20,147 @@ nav {
     height: min-content;
     padding-bottom: 15px;
     align-self: center;
-    display: flex;
     justify-content: space-between;
-    border-bottom: solid lightgray;
-    border-width: 1px;
+    border-bottom: solid #d3d3d3;
+    border-width: 1px
 }
 
 .hamburger {
-    display: none;
+    display: none
 }
 
 .logo img {
     height: 27px;
     width: auto;
-    padding-left: 25px;
+    padding-left: 25px
 }
 
 .rightNav {
-    display: flex;
+    display: flex
 }
 
 .cart {
-    padding-left: 15px;
+    padding-left: 15px
+}
+
+.navBar, button {
+    font-weight: 700;
+    height: max-content
+}
+
+.hero, .navBar {
+    width: 100%;
+    display: flex;
+    justify-content: center
 }
 
 .navBar {
-    width: 100%;
-    height: max-content;
-    display: flex;
-    justify-content: center;
-    font-weight: 700;
     font-size: 15px;
-    letter-spacing: 0.04rem;
-    color: dimgray;
+    color: #696969
 }
 
 .navBar div {
-    margin: 8px 15px 17px 15px;
-
+    margin: 8px 15px 17px
 }
 
 .navBar span:hover {
-    color: black;
-    border-bottom: 4px solid #0055b8;
-    cursor: pointer;
+    color: #000;
+    border-bottom: 4px solid #1b5ca8;
+    cursor: pointer
 }
 
 .hero {
-    background-image: url("hero/03.jpg");
+    background-image: url(hero/03.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
     height: 540px;
-    display: flex;
-    justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
+    color: #fff
 }
 
 .heroText h1 {
     font-size: 80px;
     font-weight: 800;
-    margin: -10px;
+    margin: -10px
 }
 
 .heroText .subText {
     font-size: 30px;
     font-weight: 500;
-    margin: 40px 0;
+    margin: 40px 0
 }
 
 button {
     font-family: Montserrat, sans-serif;
     font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 0.04rem;
+    letter-spacing: .04rem;
     padding: 13px 50px;
     border-radius: 35px;
     cursor: pointer;
+    width: max-content
 }
 
-.heroButt, .giftButt {
-    background: white;
-    color: #0055b8;
-    border: white;
+.giftButt, .heroButt {
+    background: #fff;
+    color: #1b5ca8;
+    border: #fff
 }
 
-.braceletText {
-    color: #0055b8;
+.braceletText, .crocoLimited, .stampsBlue h3 {
     font-weight: 800;
     font-size: 35px;
     text-align: center;
-    width: 100%;
-    max-width: 1300px;
-    margin: 50px auto 0 auto;
+    margin: 50px auto 0
 }
 
-.braceletBlock {
+.braceletText, .crocoLimited {
+    color: #1b5ca8;
+    width: 100%;
+    max-width: 1300px
+}
+
+.stampsBlue h3 {
+    color: #fff
+}
+
+.bracelet, .braceletBlock {
     display: flex;
     align-content: center;
-    justify-content: center;
+    justify-content: center
+}
+
+.bracelet, .stampsBlue h3 {
+    width: 100%;
+    max-width: 1300px
 }
 
 .bracelet {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 1300px;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 500;
+    margin-top: 30px
 }
 
 .leftBracelet {
+    width: 25%
+}
+
+.leftBracelet, .middleBracelet, .rightBracelet {
+    height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 25%;
-    height: auto;
+    justify-content: center
 }
 
 .middleBracelet {
     width: 40%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    justify-content: center;
+    justify-self: center
 }
 
 .rightBracelet {
     width: 25%;
-    height: auto;
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    text-align: right
 }
 
 .braceletObject {
@@ -162,63 +169,227 @@ button {
     display: flex;
     align-items: center;
     justify-items: center;
-    margin: -1px 0;
+    margin: -1px 0
 }
 
 .smallTxt {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 400;
-    margin-top: -10px;
+    margin-top: -10px
 }
 
 .braceletImage img {
-    width: 80px;
+    width: 90px;
     height: auto;
-    margin: 20px 15px;
+    margin: 20px 15px
 }
 
 .rating {
     display: flex;
-    flex-direction: column;
+    flex-direction: column
 }
 
 .braceletName {
-    display: flex;
-    align-self: center;
-    color: #0055b8;
+    color: #1b5ca8;
     font-weight: 750;
-    font-size: 25px;
-    margin: -60px 0 10px 0;
+    font-size: 30px;
+    margin: -40px 0 10px
+}
+
+.braceletName, .cartButt, .stars {
+    display: flex;
+    align-self: center
 }
 
 .stars {
-    display: flex;
-    align-self: center;
     justify-self: center;
-    fill: #f5c211;
-
+    fill: #f5c211
 }
 
 .stars svg {
     width: 25px;
-    height: auto;
-
+    height: auto
 }
 
 .stars span {
     font-size: 18px;
     font-weight: 410;
     padding-top: 2px;
-    margin-left: 15px;
+    margin-left: 15px
 }
 
 .cartButt {
-    background: #0055b8;
-    color: white;
-    border: #0055b8;
-    width: max-content;
-    height: max-content;
+    background: #1b5ca8;
+    color: #fff;
+    border: #1b5ca8;
+    margin: 20px 0 40px
+}
+
+.stamps {
     display: flex;
-    align-self: center;
-    margin: 20px 0 40px 0;
+    justify-content: center;
+    margin-top: 20px
+}
+
+.stampsBackground {
+    width: 100%;
+    max-width: 1150px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 18px;
+    border: #1b5ca8 2px solid
+}
+
+.stampsBlue {
+    background-color: #1b5ca8;
+    height: 40%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    color: #fff
+}
+
+.stampsBlue span {
+    display: flex;
+    margin: 10px 30px 40px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px
+}
+
+.stampsWhite {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px
+}
+
+.stampsImage img {
+    height: 200px;
+    width: auto;
+    margin: 40px 20px
+}
+
+.stampsImage3 img {
+    padding-top: 20px;
+    height: 170px
+}
+
+.gift, .present {
+    display: flex;
+    justify-content: center
+}
+
+.present {
+    margin: 20px
+}
+
+.gift {
+    height: max-content;
+    align-content: center;
+    margin-bottom: 20px
+}
+
+.giftBackground {
+    width: 100%;
+    max-width: 1150px;
+    display: flex
+}
+
+.giftLeft, .giftRight {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center
+}
+
+.giftLeft {
+    padding: 0 30px;
+    flex-direction: column;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+    border: #1b5ca8 2px solid;
+    background: #1b5ca8;
+    color: #fff
+}
+
+.crocoBackground h3, .giftLeft h3 {
+    font-weight: 800;
+    font-size: 35px;
+    text-align: left;
+    margin: 0 0 25px
+}
+
+.giftLeft span {
+    display: flex;
+    text-align: left;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px
+}
+
+.giftButt {
+    display: flex;
+    align-self: flex-start;
+    margin-top: 30px
+}
+
+.giftRight img {
+    object-fit: cover;
+    width: 100%;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px
+}
+
+.croco, .water {
+    display: flex;
+    width: 100%
+}
+
+.water {
+    background-image: url(img/background1.webp);
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    justify-content: center
+}
+
+.croco {
+    flex-direction: column;
+    align-items: center;
+    margin: 250px 0
+}
+
+.crocoLimited {
+    margin-bottom: 40px
+}
+
+.crocoBackground {
+    background-image: url(img/croco.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 18px;
+    width: 100%;
+    max-width: 1150px;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    color: #fff
+}
+
+.crocoBackground h3, .crocoBackground p {
+    margin-left: 60px;
+    margin-bottom: 10px
+}
+
+.crocoBackground h3 {
+    margin-top: 50px
+}
+
+.crocoButt {
+    background: #1b5ca8;
+    color: #fff;
+    border: #1b5ca8;
+    font-size: 15px;
+    margin: 5px 0 40px 60px
 }
