@@ -12,7 +12,7 @@ nav {
     width: 100%;
     height: max-content;
     padding-top: 30px;
-    flex-direction: column
+    flex-direction: column;
 }
 
 .top {
@@ -86,7 +86,7 @@ nav {
     margin: -10px
 }
 
-.heroText .subText {
+.heroText .heroSubText {
     font-size: 30px;
     font-weight: 500;
     margin: 40px 0
@@ -332,10 +332,13 @@ button {
     margin-top: 30px
 }
 
-.giftRight img {
+.blogImage img, .giftRight img {
     object-fit: cover;
     width: 100%;
-    border-top-right-radius: 18px;
+    border-top-right-radius: 18px
+}
+
+.giftRight img {
     border-bottom-right-radius: 18px
 }
 
@@ -407,7 +410,10 @@ button {
 }
 
 .blog {
-    margin: 350px 0
+    margin: 300px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .blogTitle {
@@ -427,35 +433,105 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 0 auto
 }
 
 .blogLeft, .blogRight {
     display: flex;
     flex-direction: column;
     margin: 0 10px;
-    width: 100%;
+    height: 250px;
+    width: 100%
+}
+
+.blogImage {
+    height: 255px
 }
 
 .blogImage img {
-    object-fit: cover;
     object-position: center center;
-    width: 100%;
-    height: 250px;
-    border-top-right-radius: 18px;
-    border-top-left-radius: 18px;
+    max-height: 255px;
+    height: 100%;
+    border-top-left-radius: 18px
 }
 
 .blogText {
-    background: white;
+    background: #fff;
     border-bottom-right-radius: 18px;
     border-bottom-left-radius: 18px;
     color: #1b5ca8;
-    text-align: center;
     display: flex;
-    align-self: center;
+    align-items: center;
     font-weight: 800;
     line-height: 25px;
     font-size: 20px;
-    height: 50px;
+    height: 100px;
+    padding: 0 10px;
+}
+
+.blogText span {
+    margin: auto auto;
+    text-align: center;
+}
+
+.water3, .water4 {
+    display: flex;
+    background-image: url(img/background3.webp);
+    width: 100%;
+    height: 1300px;
+    margin-top: -350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    justify-content: center
+}
+
+.water4 {
+    background-image: url(img/background4.webp)
+}
+
+.gridBackground {
+    width: 100%;
+    max-width: 1150px;
+    display: flex;
+    justify-content: center;
+    max-height: 500px;
+    height: 100%;
+}
+
+.gridImage {
+    max-height: 210px;
+    max-width: 210px;
+    height: 100%;
+    width: 100%;
+}
+
+.gridImage img {
+    max-height: 210px;
+    height: 100%;
+}
+
+.gridImgs {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 50% 50%;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin: 0 auto;
+}
+
+.gridImageTL img {
+    border-top-left-radius: 18px;
+}
+
+.gridImageTR img {
+    border-top-right-radius: 18px;
+}
+
+.gridImageBL img {
+    border-bottom-left-radius: 18px;
+}
+
+.gridImageBR img {
+    border-bottom-right-radius: 18px;
 }
