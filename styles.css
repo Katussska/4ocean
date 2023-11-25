@@ -4,6 +4,11 @@ body {
     font-family: Montserrat, sans-serif
 }
 
+* {
+    padding: 0;
+    margin: 0;
+}
+
 .top, nav {
     display: flex
 }
@@ -99,7 +104,7 @@ button {
     padding: 13px 50px;
     border-radius: 35px;
     cursor: pointer;
-    width: max-content
+    text-align: center;
 }
 
 .giftButt, .heroButt, .gridButt {
@@ -394,7 +399,8 @@ button {
     color: #fff;
     border: #1b5ca8;
     font-size: 15px;
-    margin: 5px 0 40px 60px
+    margin: 5px 0 40px 60px;
+    width: 350px;
 }
 
 .water2 {
@@ -491,7 +497,7 @@ button {
 }
 
 .water4 {
-    height: 1500px;
+    height: 1700px;
     margin-top: -350px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -503,7 +509,7 @@ button {
 .blog4 {
     width: 100%;
     max-width: 1150px;
-    margin: 80px auto 50px auto;
+    margin: 250px auto 50px auto;
     display: flex;
     flex-direction: column;
     align-items: center
@@ -634,39 +640,221 @@ button {
 }
 
 .blog5 {
-    height: 1100px;
-    width: 100%;
-    max-width: 1150px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-}
-
-.grid2Top, .grid2Bottom {
-    width: 100%;
-    display: grid;
-    grid-template-rows: 1fr;
-    margin: 0 auto;
-    grid-gap: 20px;
-}
-
-.grid2Top {
-    grid-template-columns: 1fr 1fr;
-}
-
-.grid2Bottom {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.grid2Bottom div, .grid2Top div {
-    border-radius: 18px;
+    margin: 30px auto;
+    max-width: 1150px;
+    height: 100%
 }
 
 .blog5Title {
     font-weight: 800;
     font-size: 35px;
     text-align: center;
-    margin: 50px auto 0;
+    margin: 40px auto;
     color: #1b5ca8;
+}
+
+.grid2Background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.grid2Top, .grid2Bottom {
+    max-width: 1150px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+}
+
+.grid2Background > div > div > img {
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+}
+
+.grid2Background > div > div > div {
+    border-bottom-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+
+.grid2Background > div > div > div > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0 30px;
+    color: white;
+}
+
+.gridSmallTitleBottom, .gridSmallTitleTop {
+    background: #1b5ca8;
+    height: 90px;
+    display: flex;
+    align-self: center;
+    width: 100%;
+}
+
+.gridSmallTitleTop {
+    height: 70px;
+}
+
+.gridImageTop, .gridImageBottom {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px;
+    width: 100%;
+}
+
+.gridImageTop img {
+    object-position: center center;
+    object-fit: cover;
+    max-height: 370px;
+    height: 100%;
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+.gridImageBottom {
+    width: 25%;
+    margin: 0;
+    padding: 10px;
+}
+
+.gridImageBottom img {
+    object-position: center center;
+    object-fit: cover;
+    max-height: 200px;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.form {
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(img/formBackgrnd.webp);
+}
+
+.formBackground {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.formTitle {
+    margin: 10px 0;
+    color: white;
+    font-weight: 800;
+    font-size: 48px;
+}
+
+.formParag {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 60px
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input {
+    padding: 0 20px;
+    height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    color: dimgrey;
+    font-size: 15px;
+}
+
+.submitButt {
+    background: #1b5ca8;
+    color: #fff;
+    border: #1b5ca8;
+    width: 100%;
+    text-align: center;
+}
+
+footer {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.footer {
+    background-color: #1b5ca8;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerBackground {
+    display: flex;
+    justify-content: center;
+}
+
+.footerTitle {
+    display: flex;
+    align-self: center;
+    margin: 70px 0 20px 0;
+    font-size: 25px;
+}
+
+.footer-column {
+    margin: 20px 100px;
+}
+
+.footer-column > h3 {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    margin: 30px 0;
+    display: block;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.footer-link:hover {
+    color: white;
+    opacity: 1;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.socials > svg {
+    fill: white;
+    width: 50px;
+    height: auto;
 }
