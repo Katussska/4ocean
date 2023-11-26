@@ -9,6 +9,11 @@ body {
     margin: 0;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
 .top, nav {
     display: flex
 }
@@ -17,7 +22,9 @@ nav {
     width: 100%;
     height: max-content;
     padding-top: 30px;
-    flex-direction: column
+    flex-direction: column;
+    border-bottom: solid #d3d3d3;
+    border-width: 1px
 }
 
 .top {
@@ -30,10 +37,6 @@ nav {
     border-width: 1px
 }
 
-.hamburger {
-    display: none
-}
-
 .logo img {
     height: 27px;
     width: auto;
@@ -41,7 +44,7 @@ nav {
 }
 
 .rightNav {
-    display: flex
+    display: flex;
 }
 
 .cart {
@@ -775,7 +778,7 @@ form {
     width: 100%;
 }
 
-input {
+.formBackground > form > input {
     padding: 0 20px;
     height: 50px;
     margin-bottom: 20px;
