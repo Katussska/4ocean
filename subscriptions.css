@@ -22,15 +22,16 @@
 
 .subText {
     line-height: 1.8;
-    margin-bottom: 35px;
     text-align: center;
+    margin-top: 40px;
 }
 
 .boxes {
     display: flex;
     justify-content: space-between;
     width: 1150px;
-    margin: 0 auto 10px auto;
+    height: auto;
+    margin: -20px auto 10px auto;
 }
 
 .leftBox, .rightBox {
