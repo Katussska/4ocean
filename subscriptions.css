@@ -1,0 +1,119 @@
+.subHero {
+    background-image: url(hero/subHero.png);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 540px;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.introContainer {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.subText {
+    line-height: 1.8;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: 0 auto 10px auto;
+}
+
+.leftBox, .rightBox {
+    width: 50%;
+    background: #f3f3f3;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxImg > img {
+    width: 450px;
+    height: auto;
+    margin: 20px;
+}
+
+.boxTitle, .boxText {
+    color: black;
+}
+
+.boxTitle {
+    font-size: 20px;
+}
+
+.boxText {
+    padding: 20px;
+    text-align: center;
+}
+
+.started {
+    color: #1b5ca8;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+.started:hover {
+    cursor: pointer;
+}
+
+.soapText {
+    width: 1050px;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.subTitle {
+    font-size: 45px;
+    font-weight: 800;
+    margin: 50px 0 30px 0;
+}
+
+.subText {
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+.soapContainer {
+    width: 1150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.soap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 80px auto;
+}
+
+
+.soapImg > img {
+    width: 250px;
+}
+
+.soap > span {
+    width: 250px;
+    font-weight: bold;
+    margin-top: 15px;
+}
