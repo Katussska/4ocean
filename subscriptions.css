@@ -29,14 +29,14 @@
 .boxes {
     display: flex;
     justify-content: space-between;
-    width: 1000px;
+    width: 1150px;
     margin: 0 auto 10px auto;
 }
 
 .leftBox, .rightBox {
     width: 50%;
     background: #f3f3f3;
-    margin: 10px;
+    margin: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
