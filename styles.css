@@ -92,6 +92,7 @@ nav {
     width: 400px;
     height: auto;
     z-index: 50;
+    left: calc(50% - 310px);
 }
 
 .hidden {
