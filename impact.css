@@ -2,7 +2,8 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background-image: url(hero/mapHero.svg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url(hero/mapHero.svg);
     background-color: #1b5ca8;
     background-position: center center;
     background-size: cover;

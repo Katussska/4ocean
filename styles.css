@@ -86,38 +86,67 @@ nav {
 }
 
 #slider {
+    position: absolute;
+    background: black;
+    display: flex;
+    width: 400px;
+    height: auto;
+    z-index: 50;
+}
+
+.hidden {
+    display: none !important;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+#sliderContainer {
     display: flex;
     position: absolute;
-    top: 100%;
-    left: 0;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding: 10px;
-    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-    opacity: 0;
- 
     z-index: 100;
+    height: max-content;
+}
+
+ul {
+    list-style: none;
 }
 
 .column {
     flex: 1;
-    padding: 0 10px;
 }
 
-.slider-visible {
-    opacity: 1;
-    visibility: visible;
+.column > ul > li {
+    padding: 5px;
+    width: max-content;
+    margin: 0 10px;
 }
 
-.hero {
-    background-image: url(hero/03.jpg);
+.column > ul > li > span {
+    font-size: 15px;
+    font-weight: 700;
+    color: #696969;
+}
+
+.column > ul > li > span:hover {
+    color: #000;
+    cursor: pointer;
+}
+
+#hero {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    transition: opacity 2s ease-in-out;
     height: 540px;
     align-items: center;
     text-align: center;
-    color: #fff
+    color: #fff;
+}
+
+.heroText {
+    padding-top: 80px;
 }
 
 .heroText h1 {
@@ -127,6 +156,7 @@ nav {
 }
 
 .heroText .heroSubText {
+    transition: opacity 0.5s ease-in-out;
     font-size: 30px;
     font-weight: 500;
     margin: 40px 0
@@ -574,7 +604,7 @@ button {
 
 .gridImage, .gridImage img {
     max-height: 215px;
-    height: 100%
+    height: 100%;
 }
 
 .gridImgs {

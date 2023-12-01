@@ -1,16 +1,18 @@
-var shopLink = document.getElementById('shopLink');
-var slider = document.getElementById('slider');
+const shopButton = document.getElementById('shopLink');
+const slider = document.getElementById('slider');
 
-shopLink.addEventListener('click', function (event) {
-    event.stopPropagation(); // Zabraňuje "propagation" kliknutí na další elementy
-    slider.classList.toggle('slider-visible');
-});
+function toggleSlider(event) {
+    let isClickInside = slider.contains(event.target) || shopButton.contains(event.target);
 
-document.addEventListener('click', function (event) {
-    var isClickInsideSlider = slider.contains(event.target);
-    var isClickOnShopLink = event.target === shopLink || shopLink.contains(event.target);
-
-    if (!isClickInsideSlider && !isClickOnShopLink) {
-        slider.classList.remove('slider-visible');
+    if (!isClickInside) {
+        slider.classList.add('hidden');
     }
+}
+
+shopButton.addEventListener('click', function () {
+    slider.classList.remove('hidden');
+    console.log("shop stisknuto")
+    console.log(slider)
 });
+
+document.addEventListener('click', toggleSlider);

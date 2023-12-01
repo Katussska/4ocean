@@ -42,41 +42,43 @@
         </div>
     </div>
     <div class="navBar">
-        <div><a href="#"><span id="shopLink" class="aHover">Shop</span></a></div>
+        <div id="shopLink"><span>Shop</span></div>
         <div><span>Mission</span></div>
         <div><a href="impact.html"><span class="aHover">Impact</span></a></div>
-        <div><span>Subscriptions</span></div>
+        <div><a href="subscriptions.html"><span class="aHover">Subscriptions</span></a></div>
         <div><span>Partnerships</span></div>
-        <div><span>Get Involved</span></div>
+        <div><a href="account.html"><span class="aHover">Profile</span></a></div>
     </div>
 </nav>
 
-<div id="slider" class="slider-hidden">
-    <div class="column">
-        <ul>
-            <li><a href="#">All Products</a></li>
-            <li><a href="#">Best Sellers</a></li>
-            <li><a href="#">Subscriptions</a></li>
-            <li><a href="#">Last Straw Bracelet</a></li>
-            <li><a href="#">The Restorations</a></li>
-            <li><a href="#">Holiday Gift Guide</a></li>
+<div id="slider" class="hidden">
+    <div id="sliderContainer">
+        <div class="column">
+            <ul>
+                <li><span>All Products</span></li>
+                <li><span>Best Sellers</span></li>
+                <li><span>Subscriptions</span></li>
+                <li><span>Last Straw Bracelet</span></li>
+                <li><span>The Restorations</span></li>
+                <li><span>Holiday Gift Guide</span></li>
 
-        </ul>
-    </div>
-    <div class="column">
-        <ul>
-            <li><a href="#">Položka 6</a></li>
-            <li><a href="#">Položka 7</a></li>
-            <li><a href="#">Položka 6</a></li>
-            <li><a href="#">Položka 7</a></li>
-            <li><a href="#">Položka 6</a></li>
-            <li><a href="#">Položka 7</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <ul>
+                <li><span>New Arrivals</span></li>
+                <li><span>Bracelets</span></li>
+                <li><span>4ocean Signature Bracelet</span></li>
+                <li><span>Ghost Net Bracelets</span></li>
+                <li><span>Sustainable Swaps</span></li>
+                <li><span>Holiday Clearance</span></li>
 
-        </ul>
+            </ul>
+        </div>
     </div>
 </div>
 
-<div class="hero">
+<div id="hero">
     <div class="heroText">
         <div>
             <h1>Join the clean</h1>
@@ -92,6 +94,7 @@
     </div>
 </div>
 
+<script type="module" src="heroSlider.js" defer></script>
 
 <h3 class="braceletText">By purchasing this bracelet, you will remove 5 pounds of<br>
     trash from the world's oceans, rivers, and coastlines</h3>
@@ -513,6 +516,6 @@
     <p>© This project aims to replicate the website www.4ocean.com as closely as possible for educational purposes.</p>
 </footer>
 
-<script type="module" src="slider.js"></script>
+<script src="slider.js" defer></script>
 </body>
 </html>
