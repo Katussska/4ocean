@@ -1,5 +1,7 @@
 # School Project - Website Replication (!in progress!)
 
+**Node: Not responsive yet.**
+
 This project aims to replicate the website [www.4ocean.com](https://www.4ocean.com/) as closely as possible for
 educational purposes.
 
